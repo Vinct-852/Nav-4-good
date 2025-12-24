@@ -11,7 +11,7 @@ import SwiftUI
 struct Indooe_nav_4_goodApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TranscriptionView()
         }
     }
 }

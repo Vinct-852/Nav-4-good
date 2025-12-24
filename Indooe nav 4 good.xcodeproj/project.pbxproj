@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1A56F37F2EB8F3EB002512B7 /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A56F37E2EB8F3EB002512B7 /* WhisperKit */; };
+		1A56F3E52EC08BC7002512B7 /* SwiftDotenv in Frameworks */ = {isa = PBXBuildFile; productRef = 1A56F3E42EC08BC7002512B7 /* SwiftDotenv */; };
+		1A56F4032EC08D23002512B7 /* .gitignore in Sources */ = {isa = PBXBuildFile; fileRef = 1A56F4022EC08D21002512B7 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1AE82C4C2EAA301600367422 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A56F4022EC08D21002512B7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1AE82C3E2EAA301400367422 /* Indooe nav 4 good.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Indooe nav 4 good.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE82C4B2EAA301600367422 /* Indooe nav 4 goodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Indooe nav 4 goodTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE82C552EAA301600367422 /* Indooe nav 4 goodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Indooe nav 4 goodUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A56F3E52EC08BC7002512B7 /* SwiftDotenv in Frameworks */,
+				1A56F37F2EB8F3EB002512B7 /* WhisperKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +81,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A56F3E32EC08BC7002512B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1AE82C352EAA301400367422 = {
 			isa = PBXGroup;
 			children = (
 				1AE82C402EAA301400367422 /* Indooe nav 4 good */,
 				1AE82C4E2EAA301600367422 /* Indooe nav 4 goodTests */,
 				1AE82C582EAA301600367422 /* Indooe nav 4 goodUITests */,
+				1A56F3E32EC08BC7002512B7 /* Frameworks */,
 				1AE82C3F2EAA301400367422 /* Products */,
+				1A56F4022EC08D21002512B7 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +130,8 @@
 			);
 			name = "Indooe nav 4 good";
 			packageProductDependencies = (
+				1A56F37E2EB8F3EB002512B7 /* WhisperKit */,
+				1A56F3E42EC08BC7002512B7 /* SwiftDotenv */,
 			);
 			productName = "Indooe nav 4 good";
 			productReference = 1AE82C3E2EAA301400367422 /* Indooe nav 4 good.app */;
@@ -170,8 +190,11 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1630;
-				LastUpgradeCheck = 1630;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					1AE82C3D2EAA301400367422 = {
 						CreatedOnToolsVersion = 16.3;
@@ -195,6 +218,10 @@
 			);
 			mainGroup = 1AE82C352EAA301400367422;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1A56F37D2EB8F3EB002512B7 /* XCRemoteSwiftPackageReference "WhisperKit" */,
+				1A56F3E22EC0893F002512B7 /* XCRemoteSwiftPackageReference "swift-dotenv" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1AE82C3F2EAA301400367422 /* Products */;
 			projectDirPath = "";
@@ -236,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A56F4032EC08D23002512B7 /* .gitignore in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +355,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -383,6 +412,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -397,11 +427,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Indooe-nav-4-good-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to discover and connect to nearby UWB accessories.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your app uses your location to locate where you are.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need microphone access to transcribe your speech.";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "This app uses Nearby Interaction to measure precise distance and direction to UWB accessories.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Your app uses your speech to understand your requirements.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,11 +459,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Indooe-nav-4-good-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to discover and connect to nearby UWB accessories.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your app uses your location to locate where you are.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need microphone access to transcribe your speech.";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "This app uses Nearby Interaction to measure precise distance and direction to UWB accessories.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Your app uses your speech to understand your requirements.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,6 +590,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A56F37D2EB8F3EB002512B7 /* XCRemoteSwiftPackageReference "WhisperKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/WhisperKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		1A56F3E22EC0893F002512B7 /* XCRemoteSwiftPackageReference "swift-dotenv" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thebarndog/swift-dotenv.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A56F37E2EB8F3EB002512B7 /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A56F37D2EB8F3EB002512B7 /* XCRemoteSwiftPackageReference "WhisperKit" */;
+			productName = WhisperKit;
+		};
+		1A56F3E42EC08BC7002512B7 /* SwiftDotenv */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A56F3E22EC0893F002512B7 /* XCRemoteSwiftPackageReference "swift-dotenv" */;
+			productName = SwiftDotenv;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1AE82C362EAA301400367422 /* Project object */;
 }
